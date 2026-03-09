@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>LeetCode Progress Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>LeetCode Progress Tracker</h1>
+
+<div class="dashboard">
+
+<div class="card total">
+<h3>Total Solved</h3>
+<p id="totalSolved">0 / 0</p>
+</div>
+
+<div class="card easy">
+<h3>Easy</h3>
+<p id="easyCount">0</p>
+</div>
+
+<div class="card medium">
+<h3>Medium</h3>
+<p id="mediumCount">0</p>
+</div>
+
+<div class="card hard">
+<h3>Hard</h3>
+<p id="hardCount">0</p>
+</div>
+
+</div>
+
+<div class="progress-container">
+<div id="progressBar"></div>
+</div>
+
+<div class="controls">
+
+<button id="loadBtn">Load Problems</button>
+
+<input id="searchInput" placeholder="Search problem">
+
+<select id="difficultyFilter">
+<option value="all">All</option>
+<option value="Easy">Easy</option>
+<option value="Medium">Medium</option>
+<option value="Hard">Hard</option>
+</select>
+
+<button id="randomBtn">Random Problem</button>
+
+</div>
+
+<ul id="problemList"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
